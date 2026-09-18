@@ -1,0 +1,105 @@
+/* public/style.css - Tiên Hiệp Xianxia Styling */
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes auraPulse {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.25), inset 0 0 20px rgba(245, 158, 11, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(245, 158, 11, 0.5), inset 0 0 35px rgba(245, 158, 11, 0.3);
+  }
+}
+
+@keyframes floatText {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-40px) scale(1.2); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+.aura-circle {
+  animation: auraPulse 4s ease-in-out infinite;
+}
+
+/* Tab pane active states */
+.tab-pane {
+  display: none !important;
+}
+.tab-pane.active {
+  display: flex !important;
+}
+
+/* Nav tabs */
+.nav-tab {
+  transition: all 0.2s ease;
+}
+.nav-tab.active {
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.03) 100%);
+  border-left: 3px solid #f59e0b;
+  color: #fbbf24 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}
+
+/* Plot Tile in Farm */
+.plot-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.plot-card:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-2px);
+}
+.plot-card.ripe {
+  border-color: rgba(245, 158, 11, 0.6);
+  background: radial-gradient(circle at center, rgba(245, 158, 11, 0.15), rgba(15, 23, 42, 0.9));
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+}
+
+/* Chat system banner */
+.chat-sys {
+  background: rgba(239, 68, 68, 0.1);
+  border-left: 2px solid #ef4444;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fca5a5;
+}
+
+/* Floating combat text */
+.floating-damage {
+  position: absolute;
+  font-weight: 900;
+  font-family: monospace;
+  pointer-events: none;
+  animation: floatText 1.2s forwards ease-out;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}

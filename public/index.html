@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Chân Giới - Web Game Tu Tiên Multiplayer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Playfair Display, Cinzel, Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Xianxia Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col selection:bg-amber-500 selection:text-black">
+
+  <!-- ================= TOP HEADER ================= -->
+  <header class="border-b border-amber-500/20 bg-slate-900/80 backdrop-blur-md sticky top-0 z-40 px-4 py-2.5 shadow-lg shadow-black/40">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- LOGO & BRAND -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-600 via-amber-400 to-yellow-200 p-0.5 shadow-lg shadow-amber-500/30 flex items-center justify-center animate-pulse">
+          <div class="w-full h-full bg-slate-950 rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-yin-yang text-amber-400 text-xl"></i>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-lg font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500 font-serif">
+            TU CHÂN GIỚI
+          </h1>
+          <div class="flex items-center space-x-2 text-xs text-amber-300/70">
+            <span><i class="fa-solid fa-cloud-moon mr-1"></i>Thiên Đạo Vận Chuyển</span>
+            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            <span id="online-count" class="text-emerald-400 font-semibold">1 Đạo Hữu</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARACTER QUICK STATUS BAR -->
+      <div id="top-char-bar" class="hidden md:flex items-center flex-wrap gap-4 text-xs">
+        
+        <!-- Đạo Hiệu & Ngũ Hành -->
+        <div class="flex items-center space-x-2 bg-slate-800/80 border border-slate-700/60 rounded-lg px-3 py-1.5">
+          <i class="fa-solid fa-user-ninja text-amber-400"></i>
+          <span id="top-name" class="font-bold text-sm text-slate-100">Đạo Hữu</span>
+          <span id="top-element" class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">Hỏa</span>
+        </div>
+
+        <!-- Cảnh Giới -->
+        <div class="flex items-center space-x-2 bg-slate-800/80 border border-slate-700/60 rounded-lg px-3 py-1.5">
+          <i class="fa-solid fa-mountain-sun text-cyan-400"></i>
+          <span id="top-realm" class="font-bold text-cyan-300">Luyện Khí Tầng 1</span>
+        </div>
+
+        <!-- Thể Lực (Stamina) -->
+        <div class="flex items-center space-x-2 bg-slate-800/80 border border-slate-700/60 rounded-lg px-3 py-1.5">
+          <i class="fa-solid fa-bolt text-yellow-400"></i>
+          <span class="text-slate-400">Thể Lực:</span>
+          <span id="top-stamina" class="font-bold text-yellow-300">100/100</span>
+          <button id="btn-quick-stamina" title="Cắn 1 viên Thể Lực Đan (+50 TL)" class="text-[10px] bg-yellow-500/20 hover:bg-yellow-500/40 text-yellow-300 border border-yellow-500/40 px-1.5 py-0.5 rounded ml-1 transition">
+            + Đan
+          </button>
+        </div>
+
+        <!-- Khí Huyết (HP) -->
+        <div class="flex items-center space-x-2 bg-slate-800/80 border border-slate-700/60 rounded-lg px-3 py-1.5">
+          <i class="fa-solid fa-heart-pulse text-red-400"></i>
+          <span class="text-slate-400">Khí Huyết:</span>
+          <span id="top-hp" class="font-bold text-red-300">500/500</span>
+          <button id="btn-quick-heal" title="Hồi phục toàn bộ khí huyết" class="text-[10px] bg-red-500/20 hover:bg-red-500/40 text-red-300 border border-red-500/40 px-1.5 py-0.5 rounded ml-1 transition">
+            Hồi
+          </button>
+        </div>
+
+        <!-- Linh Thạch -->
+        <div class="flex items-center space-x-2 bg-slate-800/80 border border-slate-700/60 rounded-lg px-3 py-1.5">
+          <i class="fa-solid fa-gem text-purple-400"></i>
+          <span class="text-slate-400">Linh Thạch:</span>
+          <span id="top-stones" class="font-bold text-purple-300">5,000</span>
+        </div>
+
+      </div>
+
+      <!-- USER BUTTONS -->
+      <div class="flex items-center space-x-2">
+        <button id="btn-logout" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="hidden sm:inline">Đổi Đạo Hiệu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- TU VI PROGRESS BAR (GLOBAL HEADER STRIP) -->
+    <div id="tuvi-bar-container" class="max-w-7xl mx-auto mt-2 pt-2 border-t border-slate-800 flex items-center gap-3 text-xs">
+      <span class="text-amber-400 font-semibold flex items-center gap-1 min-w-[70px]">
+        <i class="fa-solid fa-fire text-amber-500"></i> Tu Vi:
+      </span>
+      <div class="flex-1 bg-slate-800/90 rounded-full h-4 overflow-hidden p-0.5 border border-amber-500/30 relative">
+        <div id="top-exp-bar" class="bg-gradient-to-r from-amber-600 via-amber-400 to-yellow-300 h-full rounded-full transition-all duration-300" style="width: 0%;"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-slate-100 drop-shadow">
+          <span id="top-exp-text">0 / 100 (0%)</span>
+        </div>
+      </div>
+      <span id="top-exp-rate" class="text-amber-300 text-xs font-mono font-bold whitespace-nowrap">+1.0/s</span>
+      <button id="btn-breakthrough" class="bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-black px-4 py-1 rounded-full shadow-md shadow-amber-500/30 transition transform active:scale-95 text-xs flex items-center gap-1 disabled:opacity-40 disabled:pointer-events-none">
+        <i class="fa-solid fa-bolt-lightning"></i> ĐỘT PHÁ
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN LAYOUT ================= -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+    
+    <!-- LEFT COLUMN: NAVIGATION / TABS (Col 1-3) -->
+    <aside class="lg:col-span-3 flex flex-col gap-3">
+      
+      <!-- Character Summary Card -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 shadow-xl relative overflow-hidden group">
+        <div class="absolute -right-8 -top-8 w-28 h-28 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition"></div>
+        
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-12 h-12 rounded-xl bg-slate-800 border border-amber-500/30 flex items-center justify-center text-2xl shadow-inner">
+            <span id="side-element-icon">🔥</span>
+          </div>
+          <div>
+            <div id="side-name" class="font-bold text-base text-amber-200">Đạo Hữu</div>
+            <div id="side-physique-badge" class="text-xs px-2 py-0.5 rounded font-medium bg-slate-800 text-slate-300 border border-slate-700 inline-block mt-0.5">
+              Phàm Thai Nhục Thân
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 text-xs border-t border-slate-800 pt-3 text-slate-400">
+          <div>Công Kích: <span id="stat-atk" class="font-bold text-red-400">50</span></div>
+          <div>Phòng Ngự: <span id="stat-def" class="font-bold text-blue-400">25</span></div>
+          <div>Khí Huyết: <span id="stat-hp" class="font-bold text-emerald-400">500</span></div>
+          <div>Thân Pháp: <span id="stat-speed" class="font-bold text-yellow-400">10</span></div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs Menu -->
+      <nav class="bg-slate-900/90 border border-slate-800 rounded-xl p-2 shadow-xl flex flex-col gap-1.5">
+        <button class="nav-tab active w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition text-left" data-tab="tab-cultivation">
+          <i class="fa-solid fa-person-praying text-amber-400 w-5 text-center"></i>
+          <span>Tọa Thiền & Tẩy Tủy</span>
+        </button>
+
+        <button class="nav-tab w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition text-left text-slate-400 hover:text-slate-100 hover:bg-slate-800/60" data-tab="tab-training">
+          <i class="fa-solid fa-shield-halved text-red-400 w-5 text-center"></i>
+          <span>Lịch Luyện Hoang Dã</span>
+        </button>
+
+        <button class="nav-tab w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition text-left text-slate-400 hover:text-slate-100 hover:bg-slate-800/60" data-tab="tab-farm">
+          <i class="fa-solid fa-seedling text-emerald-400 w-5 text-center"></i>
+          <span>Nông Trại Động Phủ</span>
+        </button>
+
+        <button class="nav-tab w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition text-left text-slate-400 hover:text-slate-100 hover:bg-slate-800/60" data-tab="tab-boss">
+          <i class="fa-solid fa-dragon text-purple-400 w-5 text-center"></i>
+          <div class="flex-1 flex items-center justify-between">
+            <span>Boss Thế Giới</span>
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+          </div>
+        </button>
+
+        <button class="nav-tab w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-semibold transition text-left text-slate-400 hover:text-slate-100 hover:bg-slate-800/60" data-tab="tab-inventory">
+          <i class="fa-solid fa-box-open text-amber-400 w-5 text-center"></i>
+          <span>Túi Càn Khôn</span>
+        </button>
+      </nav>
+
+      <!-- Online Players Mini Card -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3 shadow-xl text-xs">
+        <div class="text-slate-400 font-bold mb-2 flex items-center justify-between">
+          <span><i class="fa-solid fa-users text-emerald-400 mr-1.5"></i>Đạo Hữu Đồng Hành</span>
+          <span id="online-badge" class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[10px]">1 online</span>
+        </div>
+        <div id="online-players-list" class="space-y-1.5 max-h-36 overflow-y-auto pr-1">
+          <div class="text-slate-500 italic text-[11px]">Đang quét linh thức...</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CENTER COLUMN: ACTIVE TAB CONTENT (Col 4-8) -->
+    <section class="lg:col-span-6 flex flex-col gap-4">
+      
+      <!-- TAB 1: TU LUYỆN & TẨY TỦY -->
+      <div id="tab-cultivation" class="tab-pane active flex flex-col gap-4">
+        
+        <!-- Big Cultivation Aura Card -->
+        <div class="bg-gradient-to-b from-slate-900 via-slate-900/90 to-slate-950 border border-amber-500/30 rounded-2xl p-6 shadow-2xl relative overflow-hidden text-center flex flex-col items-center">
+          <div class="aura-circle w-44 h-44 rounded-full border-2 border-dashed border-amber-400/40 flex items-center justify-center my-4 relative">
+            <div class="w-36 h-36 rounded-full bg-amber-500/10 backdrop-blur-sm border border-amber-400/60 flex items-center justify-center animate-spin-slow">
+              <i class="fa-solid fa-yin-yang text-6xl text-amber-400/80"></i>
+            </div>
+            <div class="absolute -bottom-2 bg-slate-900 border border-amber-400/60 text-amber-300 font-bold px-3 py-0.5 rounded-full text-xs shadow">
+              Hấp Thụ Linh Khí
+            </div>
+          </div>
+
+          <h2 id="cult-realm-name" class="text-2xl font-black text-amber-300 font-serif mb-1">Luyện Khí Tầng 1</h2>
+          <p id="cult-realm-sub" class="text-xs text-slate-400 mb-4">Căn cơ vững chắc, đả thông kinh mạch, thu nạp linh khí thiên địa.</p>
+
+          <!-- Breakthrough Action in Tab -->
+          <div class="w-full bg-slate-950/80 rounded-xl p-4 border border-slate-800 flex flex-col gap-2">
+            <div class="flex justify-between text-xs">
+              <span class="text-slate-400">Tiến Độ Tu Vi:</span>
+              <span id="cult-exp-percent" class="font-bold text-amber-300">0%</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+              <div id="cult-exp-bar" class="bg-gradient-to-r from-amber-500 to-yellow-300 h-full transition-all duration-300" style="width: 0%;"></div>
+            </div>
+            <div class="flex justify-between text-[11px] text-slate-500">
+              <span id="cult-exp-detail">0 / 100</span>
+              <span id="cult-rate-detail">+1.0 Tu Vi / Giây</span>
+            </div>
+
+            <button id="btn-cult-breakthrough" class="mt-2 w-full py-2.5 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 hover:opacity-90 text-slate-950 font-black rounded-lg shadow-lg shadow-amber-500/30 transition text-sm flex items-center justify-center gap-2 disabled:opacity-40 disabled:pointer-events-none">
+              <i class="fa-solid fa-burst text-base"></i> TIẾN HÀNH ĐỘT PHÁ CẢNH GIỚI
+            </button>
+            <div class="text-[11px] text-slate-500 text-center">
+              ⚠️ Tỷ lệ thành công giảm dần theo cảnh giới cao. Thất bại bị phản phệ mất 20% Tu Vi!
+            </div>
+          </div>
+        </div>
+
+        <!-- Physique / Tẩy Tủy System Card -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 shadow-xl">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-dna text-purple-400 text-lg"></i>
+              <h3 class="font-bold text-base text-slate-100">Tẩy Tủy Hoán Cốt (Thể Chất)</h3>
+            </div>
+            <span class="text-xs text-purple-400 font-semibold bg-purple-500/10 px-2.5 py-1 rounded-full border border-purple-500/30">
+              Chi phí: 1,000 Linh Thạch
+            </span>
+          </div>
+
+          <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-4 mb-4">
+            <div class="text-xs text-slate-400 mb-1">Thể chất hiện tại:</div>
+            <div class="flex items-center justify-between">
+              <div id="physique-current-name" class="text-lg font-black text-slate-200">Phàm Thai Nhục Thân</div>
+              <div id="physique-current-rank" class="text-xs font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-300">Phàm Thể</div>
+            </div>
+            <div id="physique-current-buffs" class="text-xs text-slate-400 mt-2">
+              Không tăng thêm chỉ số.
+            </div>
+          </div>
+
+          <!-- Pending Physique Box (if rolled) -->
+          <div id="physique-pending-box" class="hidden bg-purple-950/40 border border-purple-500/50 rounded-xl p-4 mb-4 animate-pulse">
+            <div class="text-xs text-purple-300 font-bold mb-1">✨ PHÁT HIỆN THỂ CHẤT MỚI VỪA THỨC TỈNH:</div>
+            <div class="flex items-center justify-between mb-2">
+              <div id="physique-pending-name" class="text-lg font-black text-yellow-300">Hoang Cổ Thánh Thể</div>
+              <div id="physique-pending-rank" class="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">Thánh Thể</div>
+            </div>
+            <div id="physique-pending-buffs" class="text-xs text-slate-300 mb-3">
+              Tăng +80% Công Kích, +60% Phòng Ngự, +80% Khí Huyết, +40% Tu Vi!
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button id="btn-physique-accept" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 rounded-lg text-xs transition">
+                <i class="fa-solid fa-check mr-1"></i> Tiếp Nhận Mới
+              </button>
+              <button id="btn-physique-reject" class="bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold py-2 rounded-lg text-xs transition">
+                <i class="fa-solid fa-xmark mr-1"></i> Giữ Lại Cũ
+              </button>
+            </div>
+          </div>
+
+          <!-- Roll Button -->
+          <button id="btn-roll-physique" class="w-full py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold rounded-lg shadow-lg shadow-purple-600/30 transition text-sm flex items-center justify-center gap-2">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Tiến Hành Tẩy Tủy (Tốn 1,000 Linh Thạch)
+          </button>
+          <div class="text-[11px] text-slate-500 text-center mt-2">
+            Xác suất: Phàm Thể (50%) | Linh Thể (30%) | Vương Thể (14%) | Thánh Thể (5%) | Thần Thể (1%)
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 2: LỊCH LUYỆN HOANG DÃ -->
+      <div id="tab-training" class="tab-pane hidden flex flex-col gap-4">
+        
+        <!-- Monster Target Card -->
+        <div class="bg-slate-900/90 border border-red-500/30 rounded-2xl p-5 shadow-xl relative overflow-hidden">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-skull-crossbones text-red-400 text-lg"></i>
+              <h3 class="font-bold text-base text-slate-100">Yêu Thú Thách Thức</h3>
+            </div>
+            <span id="monster-element-badge" class="text-xs px-2.5 py-0.5 rounded font-bold bg-red-500/20 text-red-300 border border-red-500/30">
+              Hệ Hỏa
+            </span>
+          </div>
+
+          <div class="flex items-center gap-4 bg-slate-950/70 border border-slate-800 rounded-xl p-4 mb-4">
+            <div class="w-16 h-16 rounded-xl bg-red-950/60 border border-red-500/40 flex items-center justify-center text-3xl">
+              🐺
+            </div>
+            <div class="flex-1">
+              <div id="monster-name" class="text-lg font-black text-red-400">Hỏa Sí Ma Lang</div>
+              <div class="grid grid-cols-3 gap-2 text-xs text-slate-400 mt-1">
+                <div>Khí Huyết: <span id="monster-hp" class="font-bold text-slate-200">300</span></div>
+                <div>Công Kích: <span id="monster-atk" class="font-bold text-slate-200">35</span></div>
+                <div>Phòng Ngự: <span id="monster-def" class="font-bold text-slate-200">15</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Counter Bonus Alert -->
+          <div id="counter-tip" class="text-xs bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-slate-400 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-circle-info text-cyan-400"></i>
+            <span>Quy luật Ngũ Hành: Kim $\rightarrow$ Mộc $\rightarrow$ Thổ $\rightarrow$ Thủy $\rightarrow$ Hỏa $\rightarrow$ Kim (Khắc chế +25% sát thương)</span>
+          </div>
+
+          <!-- Battle Buttons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <button id="btn-battle-x1" class="py-2.5 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold rounded-lg shadow-lg shadow-red-600/30 transition text-sm flex items-center justify-center gap-2">
+              <i class="fa-solid fa-khanda"></i> Đánh Đơn (1 Lần - 10 TL)
+            </button>
+            <button id="btn-battle-x10" class="py-2.5 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-bold rounded-lg shadow-lg shadow-amber-600/30 transition text-sm flex items-center justify-center gap-2">
+              <i class="fa-solid fa-bolt"></i> Tảo Đãng Nhanh (10 Lần - 100 TL)
+            </button>
+          </div>
+        </div>
+
+        <!-- Combat Results & Logs Panel -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl flex flex-col flex-1">
+          <div class="flex items-center justify-between mb-2">
+            <div class="font-bold text-sm text-slate-300 flex items-center gap-2">
+              <i class="fa-solid fa-scroll text-amber-400"></i>
+              <span>Nhật Ký Chiến Đấu</span>
+            </div>
+            <button id="btn-clear-logs" class="text-xs text-slate-500 hover:text-slate-300 transition">Xóa nhật ký</button>
+          </div>
+          <div id="combat-logs-box" class="bg-slate-950 border border-slate-800 rounded-xl p-3 h-64 overflow-y-auto font-mono text-xs text-slate-300 space-y-1">
+            <div class="text-slate-600 italic">Sẵn sàng xuất chiến! Hãy chọn chế độ đánh bên trên.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 3: NÔNG TRẠI ĐỘNG PHỦ -->
+      <div id="tab-farm" class="tab-pane hidden flex flex-col gap-4">
+        
+        <!-- Well & Gathering Bar -->
+        <div class="bg-slate-900/90 border border-emerald-500/30 rounded-2xl p-4 shadow-xl flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/40 flex items-center justify-center text-2xl">
+              ⛲
+            </div>
+            <div>
+              <div class="font-bold text-base text-emerald-300">Giếng Nước Linh Tuyền</div>
+              <div class="text-xs text-slate-400">Múc nước hồi phục linh điền, mỗi lần nhận +10 Nước Linh Khí</div>
+            </div>
+          </div>
+
+          <button id="btn-gather-well" class="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-lg shadow-lg shadow-emerald-600/30 text-xs flex items-center gap-2 transition disabled:opacity-40 disabled:pointer-events-none">
+            <i class="fa-solid fa-bucket"></i>
+            <span id="well-btn-text">Múc Nước Giếng</span>
+          </button>
+        </div>
+
+        <!-- 3 Farm Gardens Tabs -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <div class="flex items-center gap-2">
+              <button class="farm-garden-btn active px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 transition" data-garden="DAN">
+                🌱 Vườn Đan Dược
+              </button>
+              <button class="farm-garden-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700 hover:text-slate-200 transition" data-garden="HOA">
+                🌸 Vườn Hoa Cỏ
+              </button>
+              <button class="farm-garden-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700 hover:text-slate-200 transition" data-garden="HIEM">
+                ✨ Vườn Quý Hiếm
+              </button>
+            </div>
+            <div class="text-xs text-slate-400 hidden sm:block">
+              8 Ô Linh Điền
+            </div>
+          </div>
+
+          <!-- AOE Action Buttons (Tưới, Bón, Sâu, Thu hoạch) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+            <button class="farm-aoe-btn py-2 bg-cyan-600/20 hover:bg-cyan-600/40 text-cyan-300 border border-cyan-500/40 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5" data-action="WATER">
+              <i class="fa-solid fa-droplet"></i> Tưới Nước AOE
+            </button>
+            <button class="farm-aoe-btn py-2 bg-amber-600/20 hover:bg-amber-600/40 text-amber-300 border border-amber-500/40 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5" data-action="FERT">
+              <i class="fa-solid fa-flask"></i> Bón Phân AOE
+            </button>
+            <button class="farm-aoe-btn py-2 bg-rose-600/20 hover:bg-rose-600/40 text-rose-300 border border-rose-500/40 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5" data-action="BUG">
+              <i class="fa-solid fa-bug-slash"></i> Bắt Sâu AOE
+            </button>
+            <button class="farm-aoe-btn py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-black shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-1.5" data-action="HARVEST">
+              <i class="fa-solid fa-wheat-awn"></i> Thu Hoạch AOE
+            </button>
+          </div>
+
+          <!-- Garden 8 Plots Grid -->
+          <div id="garden-plots-grid" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <!-- 8 Plots rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Alchemy Workshop (Luyện Đan Lô) -->
+        <div class="bg-slate-900/90 border border-amber-500/30 rounded-2xl p-4 shadow-xl">
+          <div class="flex items-center gap-2 mb-3">
+            <i class="fa-solid fa-fire-burner text-amber-400 text-lg"></i>
+            <h3 class="font-bold text-base text-slate-100">Luyện Đan Phòng</h3>
+          </div>
+          <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-yellow-500/20 border border-yellow-500/40 flex items-center justify-center text-xl">
+                💊
+              </div>
+              <div>
+                <div class="font-bold text-sm text-yellow-300">Thể Lực Đan</div>
+                <div class="text-xs text-slate-400">Hồi phục ngay +50 Thể Lực. Yêu cầu: <span class="text-amber-400 font-semibold">5x Linh Chi</span></div>
+              </div>
+            </div>
+            <button id="btn-craft-stamina-pill" class="px-3 py-1.5 bg-gradient-to-r from-amber-500 to-yellow-400 hover:opacity-90 text-slate-950 font-bold rounded-lg text-xs transition">
+              Luyện Chế
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 4: BOSS THẾ GIỚI REALTIME -->
+      <div id="tab-boss" class="tab-pane hidden flex flex-col gap-4">
+        
+        <!-- World Boss Banner Card -->
+        <div class="bg-gradient-to-b from-purple-950/40 via-slate-900 to-slate-950 border border-purple-500/40 rounded-2xl p-6 shadow-2xl relative overflow-hidden text-center flex flex-col items-center">
+          
+          <div class="text-3xl mb-2 animate-bounce">🐉</div>
+          <h2 id="boss-name" class="text-2xl font-black text-purple-300 font-serif tracking-wider">
+            Trạm Lư Ma Tôn (Thái Cổ Hung Thú)
+          </h2>
+          <div id="boss-status-badge" class="mt-1 inline-block px-3 py-0.5 rounded-full text-xs font-bold bg-red-500/20 text-red-400 border border-red-500/40">
+            🔥 Đang Hoành Hành Cửu Châu
+          </div>
+
+          <!-- Realtime Boss HP Bar -->
+          <div class="w-full mt-5 bg-slate-950/90 rounded-xl p-4 border border-slate-800 flex flex-col gap-2">
+            <div class="flex justify-between text-xs">
+              <span class="text-slate-400">Khí Huyết Hung Thú:</span>
+              <span id="boss-hp-text" class="font-bold text-red-400">5,000,000 / 5,000,000</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-5 overflow-hidden p-0.5 border border-red-500/40 relative">
+              <div id="boss-hp-bar" class="bg-gradient-to-r from-red-600 via-rose-500 to-purple-600 h-full rounded-full transition-all duration-200" style="width: 100%;"></div>
+            </div>
+
+            <!-- Strike Boss Button -->
+            <button id="btn-attack-boss" class="mt-3 w-full py-3 bg-gradient-to-r from-red-600 via-purple-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-base rounded-xl shadow-xl shadow-red-600/30 transition transform active:scale-95 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-khanda text-lg"></i> XUẤT THỦ TẤN CÔNG BOSS!
+            </button>
+            <div class="text-[11px] text-slate-500 text-center">
+              Mỗi đòn đánh dựa trên Công Kích + bạo kích ngũ hành. Sát thương tính điểm thưởng toàn server!
+            </div>
+          </div>
+        </div>
+
+        <!-- Realtime DPS Leaderboard -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-trophy text-amber-400 text-lg"></i>
+              <h3 class="font-bold text-base text-slate-100">Bảng Sát Thương Toàn Giới (DPS)</h3>
+            </div>
+            <span class="text-xs text-slate-500">Realtime</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-950/80 text-slate-400 border-b border-slate-800">
+                <tr>
+                  <th class="p-2 w-12 text-center">Hạng</th>
+                  <th class="p-2">Đạo Hữu</th>
+                  <th class="p-2 text-right">Tổng Sát Thương</th>
+                </tr>
+              </thead>
+              <tbody id="boss-dps-table" class="divide-y divide-slate-800/60 font-mono">
+                <tr>
+                  <td colspan="3" class="p-3 text-center text-slate-500 italic">Chưa có đạo hữu nào khai chiến!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 5: TÚI CÀN KHÔN (INVENTORY) -->
+      <div id="tab-inventory" class="tab-pane hidden flex flex-col gap-4">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-5 shadow-xl">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-sack-dollar text-amber-400 text-lg"></i>
+              <h3 class="font-bold text-base text-slate-100">Túi Trữ Vật Càn Khôn</h3>
+            </div>
+            <span id="inv-count-badge" class="text-xs text-slate-400 bg-slate-800 px-2.5 py-1 rounded-full">0 Vật Phẩm</span>
+          </div>
+
+          <!-- Inventory Items Grid -->
+          <div id="inventory-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT COLUMN: REALTIME CHAT & ANNOUNCEMENTS (Col 9-12) -->
+    <aside class="lg:col-span-3 flex flex-col gap-3">
+      
+      <!-- Realtime Chatbox Card -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3 shadow-xl flex flex-col h-[520px] lg:h-full max-h-[650px]">
+        
+        <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-comments text-amber-400"></i>
+            <span class="font-bold text-sm text-slate-200">Tu Chân Truyền Âm</span>
+          </div>
+          <span class="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded">Kênh Thế Giới</span>
+        </div>
+
+        <!-- Chat message list -->
+        <div id="chat-messages-container" class="flex-1 overflow-y-auto space-y-2 pr-1 text-xs">
+          <!-- Chat messages rendered dynamically -->
+        </div>
+
+        <!-- Chat Input Form -->
+        <form id="chat-form" class="mt-2 pt-2 border-t border-slate-800 flex gap-1.5">
+          <input id="chat-input" type="text" placeholder="Gửi truyền âm..." maxlength="120" autocomplete="off" class="flex-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 focus:outline-none focus:border-amber-500 placeholder:text-slate-600">
+          <button type="submit" class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center justify-center">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ================= LOGIN / REGISTRATION MODAL ================= -->
+  <div id="login-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-md w-full p-6 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-12 -top-12 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl"></div>
+
+      <div class="text-center mb-5">
+        <div class="w-14 h-14 rounded-full bg-slate-800 border border-amber-400/50 mx-auto flex items-center justify-center text-2xl text-amber-400 mb-2 shadow-inner">
+          <i class="fa-solid fa-yin-yang"></i>
+        </div>
+        <h2 class="text-2xl font-black text-amber-300 font-serif">NHẬP THẾ TU CHÂN</h2>
+        <p class="text-xs text-slate-400 mt-1">Khởi tạo Đạo Hiệu để bước vào Cửu Trọng Thiên</p>
+      </div>
+
+      <form id="login-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">Đạo Hiệu (Tên Nhân Vật):</label>
+          <input id="login-name" type="text" placeholder="VD: Hàn Lập, Tiêu Viêm..." required maxlength="20" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500 placeholder:text-slate-600">
+          <p class="text-[11px] text-slate-500 mt-1">Tên mới sẽ tự động đăng ký và được ban tặng 5,000 Linh Thạch tân thủ!</p>
+        </div>
+
+        <button type="submit" class="w-full py-2.5 bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-black rounded-lg shadow-lg shadow-amber-500/30 transition text-sm flex items-center justify-center gap-2">
+          <i class="fa-solid fa-door-open"></i> BẮT ĐẦU TU HÀNH
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Socket.io client script -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Main Frontend App Script -->
+  <script src="app.js"></script>
+</body>
+</html>

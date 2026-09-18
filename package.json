@@ -1,0 +1,18 @@
+{
+  "name": "tu-chan-gioi-web",
+  "version": "1.0.0",
+  "description": "Web Game Tu Tiên Multiplayer Nội Bộ Siêu Nhẹ",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "keywords": ["tutien", "game", "xianxia", "multiplayer", "socket.io"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
