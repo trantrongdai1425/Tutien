@@ -1,4 +1,7 @@
-# [04] HỆ THỐNG BÍ CẢNH & TỔ ĐỘI REALTIME
+# [17] HỆ THỐNG BÍ CẢNH & TỔ ĐỘI REALTIME
+
+
+> ⬅️ **[Bài Trước: Doc 16 - Tam Thiên Đại Đạo & Bách Gia Lưu Phái](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/16_TAM_THIEN_DAI_DAO_VA_TIEU_DAO_LUU_PHAI.md)** | 📖 **[Mục Lục Toàn Cảnh](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/README.md)** | ➡️ **[Bài Kế: Doc 18 - Săn Boss Thế Giới & Xã Hội Multiplayer](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/18_BOSS_THE_GIOI_VA_MULTIPLAYER.md)**
 
 Bí Cảnh là hoạt động co-op chính giữa bạn và nhóm bạn bè, yêu cầu sự phối hợp tổ đội từ 1 đến 5 người chơi thật để cùng vượt qua các ải hiểm trở, lựa chọn Bát Môn và xử lý Kỳ Ngộ.
 
@@ -67,3 +70,8 @@ Trong mỗi tầng Bí Cảnh, tổ đội sẽ gặp cánh cổng Bát Môn. Tr
 | **Cát Môn (Cực tốt)** | **Sinh Môn**, **Khai Môn**, **Hưu Môn** | An toàn $100\%$, hồi phục máu, nhận thêm rương báu |
 | **Bình Môn (Trung tính)**| **Cảnh Môn**, **Thương Môn** | Gặp quái thú thông thường, độ khó vừa phải |
 | **Hung Môn (Rất nguy hiểm)**| **Kinh Môn**, **Tử Môn**, **Đỗ Môn** | Bẫy sát thương, quái tinh anh cực mạnh hoặc đường dẫn vào Boss Ẩn |
+
+
+---
+
+> ⬅️ **[Bài Trước: Doc 16 - Tam Thiên Đại Đạo & Bách Gia Lưu Phái](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/16_TAM_THIEN_DAI_DAO_VA_TIEU_DAO_LUU_PHAI.md)** | 📖 **[Mục Lục Toàn Cảnh](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/README.md)** | ➡️ **[Bài Kế: Doc 18 - Săn Boss Thế Giới & Xã Hội Multiplayer](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/18_BOSS_THE_GIOI_VA_MULTIPLAYER.md)**

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="fireBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="40%" stop-color="#450a0a"/>
+      <stop offset="85%" stop-color="#1c0505"/>
+      <stop offset="100%" stop-color="#0a0101"/>
+    </radialGradient>
+    <filter id="wolfGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" rx="24" fill="url(#fireBg)"/>
+
+  <!-- Trăng đỏ u tối phía sau đầu sói -->
+  <circle cx="400" cy="260" r="160" fill="#dc2626" opacity="0.5" filter="url(#wolfGlow)"/>
+
+  <!-- Dáng đầu & Thân Sói Đỏ U Minh dũng mãnh gầm thét -->
+  <!-- Tai sói nhọn dựng đứng -->
+  <polygon points="260,180 200,60 310,130" fill="#7f1d1d" stroke="#ef4444" stroke-width="3"/>
+  <polygon points="255,160 215,90 295,130" fill="#b91c1c"/>
+  
+  <polygon points="540,180 600,60 490,130" fill="#7f1d1d" stroke="#ef4444" stroke-width="3"/>
+  <polygon points="545,160 585,90 505,130" fill="#b91c1c"/>
+
+  <!-- Bờm lửa đỏ cuồn cuộn quanh cổ -->
+  <g fill="#ea580c" opacity="0.85" filter="url(#wolfGlow)">
+    <polygon points="180,340 120,440 240,390"/>
+    <polygon points="620,340 680,440 560,390"/>
+    <polygon points="200,440 140,540 280,470"/>
+    <polygon points="600,440 660,540 520,470"/>
+  </g>
+
+  <!-- Đầu sói xích lang -->
+  <polygon points="400,150 280,260 330,400 400,480 470,400 520,260" fill="#450a0a" stroke="#dc2626" stroke-width="4"/>
+  <polygon points="400,200 320,280 350,380 400,450 450,380 480,280" fill="#7f1d1d"/>
+
+  <!-- Mõm & Hàm răng nanh sắc nhọn -->
+  <polygon points="360,350 440,350 400,440" fill="#1c0505"/>
+  <!-- Mũi sói đen -->
+  <ellipse cx="400" cy="375" rx="20" ry="14" fill="#000000"/>
+  <!-- Răng nanh trắng ngà nhỏ máu -->
+  <polygon points="370,400 380,430 385,400" fill="#fef2f2"/>
+  <polygon points="430,400 420,430 415,400" fill="#fef2f2"/>
+  <polygon points="390,440 400,415 410,440" fill="#fef2f2"/>
+
+  <!-- Đôi mắt rực lửa huyết sắc ma quái -->
+  <polygon points="320,260 370,280 335,295" fill="#fef08a" filter="url(#wolfGlow)"/>
+  <polygon points="335,270 355,280 340,288" fill="#ef4444"/>
+  <circle cx="345" cy="278" r="3" fill="#000000"/>
+
+  <polygon points="480,260 430,280 465,295" fill="#fef08a" filter="url(#wolfGlow)"/>
+  <polygon points="465,270 445,280 460,288" fill="#ef4444"/>
+  <circle cx="455" cy="278" r="3" fill="#000000"/>
+
+  <!-- Ngọn lửa than hồng dưới chân -->
+  <path d="M0,600 Q200,520 400,550 T800,530 L800,600 Z" fill="#ea580c" opacity="0.8" filter="url(#wolfGlow)"/>
+  <path d="M0,600 Q250,550 500,570 T800,560 L800,600 Z" fill="#facc15" opacity="0.7"/>
+
+  <!-- Thẻ danh xưng Boss Cốt Truyện -->
+  <g font-family="'Times New Roman', serif">
+    <rect x="220" y="520" width="360" height="56" rx="8" fill="#000000" opacity="0.85" stroke="#ef4444" stroke-width="2"/>
+    <text x="400" y="545" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="bold" letter-spacing="3">BOSS CỐT TRUYỆN HỒI 1</text>
+    <text x="400" y="567" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold" letter-spacing="2">U MINH XÍCH LANG VƯƠNG</text>
+  </g>
+</svg>

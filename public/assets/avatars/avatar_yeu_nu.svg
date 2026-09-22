@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgYeu" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="45%" stop-color="#881337"/>
+      <stop offset="85%" stop-color="#4c0519"/>
+      <stop offset="100%" stop-color="#1f0209"/>
+    </radialGradient>
+    <filter id="foxGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="256" fill="url(#bgYeu)"/>
+  <circle cx="256" cy="256" r="248" fill="none" stroke="#fb7185" stroke-width="4" filter="url(#foxGlow)"/>
+
+  <!-- 9 Đuôi hồ ly trắng xòe rộng phía sau -->
+  <g fill="#ffffff" opacity="0.92" filter="url(#foxGlow)">
+    <ellipse cx="100" cy="220" rx="35" ry="100" transform="rotate(-40 100 220)"/>
+    <ellipse cx="140" cy="140" rx="35" ry="110" transform="rotate(-20 140 140)"/>
+    <ellipse cx="210" cy="90" rx="35" ry="110" transform="rotate(-5 210 90)"/>
+    <ellipse cx="302" cy="90" rx="35" ry="110" transform="rotate(5 302 90)"/>
+    <ellipse cx="372" cy="140" rx="35" ry="110" transform="rotate(20 372 140)"/>
+    <ellipse cx="412" cy="220" rx="35" ry="100" transform="rotate(40 412 220)"/>
+  </g>
+  <!-- Chóp đuôi phớt hồng -->
+  <g fill="#fda4af">
+    <circle cx="60" cy="170" r="14"/>
+    <circle cx="110" cy="80" r="14"/>
+    <circle cx="205" cy="30" r="14"/>
+    <circle cx="307" cy="30" r="14"/>
+    <circle cx="402" cy="80" r="14"/>
+    <circle cx="452" cy="170" r="14"/>
+  </g>
+
+  <!-- Y phục gấm lụa đỏ thắm Cửu Vĩ -->
+  <path d="M120,512 C120,380 180,340 256,340 C332,340 392,380 392,512 Z" fill="#e11d48"/>
+  <path d="M180,512 L256,370 L332,512 Z" fill="#fff1f2"/>
+  
+  <!-- Khuôn mặt kiều diễm tuyệt trần -->
+  <ellipse cx="256" cy="230" rx="55" ry="68" fill="#ffe4e6"/>
+  <!-- Đôi tai hồ ly trắng muốt xinh xắn -->
+  <polygon points="195,150 170,80 230,120" fill="#ffffff" stroke="#fda4af" stroke-width="2"/>
+  <polygon points="195,140 180,95 220,120" fill="#fda4af"/>
+  
+  <polygon points="317,150 342,80 282,120" fill="#ffffff" stroke="#fda4af" stroke-width="2"/>
+  <polygon points="317,140 332,95 292,120" fill="#fda4af"/>
+
+  <!-- Tóc đen mềm mại thả dài -->
+  <path d="M190,220 C190,140 215,130 256,130 C297,130 322,140 322,220 C322,300 300,330 300,360 C275,340 237,340 212,360 C212,330 190,300 190,220 Z" fill="#1c1917"/>
+  <!-- Hồ hỏa xanh bích lơ lửng -->
+  <circle cx="160" cy="360" r="16" fill="#34d399" filter="url(#foxGlow)"/>
+  <circle cx="352" cy="360" r="16" fill="#34d399" filter="url(#foxGlow)"/>
+</svg>

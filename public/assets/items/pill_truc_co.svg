@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#064e3b" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#022c22" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#011611"/>
+    </radialGradient>
+    <radialGradient id="pillGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="25%" stop-color="#a7f3d0"/>
+      <stop offset="55%" stop-color="#10b981"/>
+      <stop offset="85%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </radialGradient>
+    <radialGradient id="haloGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="divineLight">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" rx="30" fill="url(#bgGlow)"/>
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="12 8" opacity="0.6"/>
+
+  <!-- Vầng Thái Dương Hào Quang -->
+  <circle cx="300" cy="270" r="180" fill="url(#haloGlow)" filter="url(#divineLight)"/>
+
+  <!-- Đài Hoa Sen Thanh Ngọc nâng đỡ -->
+  <g fill="#047857" stroke="#6ee7b7" stroke-width="2">
+    <!-- Cánh sen lớp ngoài -->
+    <path d="M180,420 Q300,480 420,420 Q300,450 180,420 Z" fill="#065f46"/>
+    <path d="M220,390 Q300,470 380,390 Q300,440 220,390 Z" fill="#059669"/>
+    <!-- Cánh sen hai bên chĩa lên -->
+    <path d="M190,400 Q150,340 210,320 Q230,370 190,400 Z" fill="#10b981"/>
+    <path d="M410,400 Q450,340 390,320 Q370,370 410,400 Z" fill="#10b981"/>
+    <!-- Cánh sen chính diện -->
+    <path d="M250,410 Q300,340 350,410 Q300,430 250,410 Z" fill="#34d399"/>
+  </g>
+
+  <!-- Viên Thần Đan Trúc Cơ lơ lửng -->
+  <circle cx="300" cy="270" r="85" fill="url(#pillGrad)" filter="url(#divineLight)"/>
+  <!-- Đan Vân (Hoa văn mây tía trên thân đan) -->
+  <path d="M260,250 Q280,230 310,250 T350,260" fill="none" stroke="#ecfdf5" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M250,280 Q290,270 320,290 T345,280" fill="none" stroke="#a7f3d0" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Điểm sáng ngưng tụ lấp lánh -->
+  <ellipse cx="270" cy="235" rx="18" ry="10" fill="#ffffff" opacity="0.9" transform="rotate(-30 270 235)"/>
+  <circle cx="340" cy="300" r="5" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Tia linh khí xoay vần -->
+  <path d="M160,270 Q300,160 440,270" fill="none" stroke="#a7f3d0" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+  <path d="M170,300 Q300,410 430,300" fill="none" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+
+  <!-- Tiêu đề & Huy hiệu Phẩm cấp -->
+  <rect x="175" y="490" width="250" height="50" rx="8" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+  <text x="300" y="522" text-anchor="middle" fill="#ecfdf5" font-family="'Times New Roman', serif" font-size="20" font-weight="bold" letter-spacing="2">TRÚC CƠ LINH ĐAN</text>
+</svg>

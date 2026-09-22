@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <radialGradient id="skyGrad3" cx="50%" cy="20%" r="90%">
+      <stop offset="0%" stop-color="#581c87"/>
+      <stop offset="40%" stop-color="#2e1065"/>
+      <stop offset="80%" stop-color="#0f051d"/>
+      <stop offset="100%" stop-color="#05010a"/>
+    </radialGradient>
+    <radialGradient id="lavaGlow" cx="50%" cy="95%" r="55%">
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#991b1b" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="lightningGlow">
+      <feGaussianBlur stdDeviation="7" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#skyGrad3)"/>
+
+  <!-- Tia sét Thiên Kiếp tím bộc phát xé rách trời -->
+  <path d="M640,0 L610,160 L660,240 L590,380 L650,450 L620,580" fill="none" stroke="#d8b4fe" stroke-width="6" filter="url(#lightningGlow)"/>
+  <path d="M640,0 L610,160 L660,240 L590,380 L650,450 L620,580" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M660,240 L740,310 L710,390" fill="none" stroke="#c084fc" stroke-width="3" filter="url(#lightningGlow)"/>
+  <path d="M590,380 L520,440 L540,510" fill="none" stroke="#c084fc" stroke-width="3" filter="url(#lightningGlow)"/>
+
+  <!-- Vách đá Hắc Diễm Thạch lởm chởm -->
+  <polygon points="0,320 280,520 220,720 0,720" fill="#180d28"/>
+  <polygon points="1280,300 1020,490 1080,720 1280,720" fill="#180d28"/>
+
+  <!-- Trụ Đạo Đài Trúc Cơ vươn lên giữa hồ máu -->
+  <polygon points="560,540 720,540 740,720 540,720" fill="#2d1537" stroke="#a855f7" stroke-width="2"/>
+  <polygon points="520,540 760,540 740,560 540,560" fill="#6b21a8"/>
+
+  <!-- Biển máu Cửu U Huyết Trì -->
+  <rect width="1280" height="720" fill="url(#lavaGlow)"/>
+  <path d="M0,640 Q320,610 640,630 T1280,620 L1280,720 L0,720 Z" fill="#991b1b" opacity="0.85"/>
+  <path d="M0,670 Q320,650 640,660 T1280,650 L1280,720 L0,720 Z" fill="#ef4444" opacity="0.5" filter="url(#lightningGlow)"/>
+
+  <!-- Tiêu đề chương hồi Thư Pháp -->
+  <g font-family="'Times New Roman', serif">
+    <rect x="40" y="40" width="460" height="72" rx="6" fill="#090214" opacity="0.75" stroke="#c084fc" stroke-width="1.5"/>
+    <text x="60" y="72" fill="#e9d5ff" font-size="14" font-weight="bold" letter-spacing="3">HỒI 3: VẤN TÂM TRÚC CƠ</text>
+    <text x="60" y="98" fill="#ffffff" font-size="20" font-weight="bold" letter-spacing="1">CỬU U HUYẾT TRÌ & LÔI KIẾP</text>
+  </g>
+</svg>

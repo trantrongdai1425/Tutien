@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bgGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b45309" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#78350f" stop-opacity="0.6"/>
+      <stop offset="85%" stop-color="#2a1205" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#120601"/>
+    </radialGradient>
+    <radialGradient id="goldPill" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#eab308"/>
+      <stop offset="85%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </radialGradient>
+    <radialGradient id="sunHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#facc15" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#eab308" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" rx="30" fill="url(#bgGold)"/>
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#facc15" stroke-width="2" stroke-dasharray="10 8" opacity="0.6"/>
+
+  <circle cx="300" cy="270" r="190" fill="url(#sunHalo)" filter="url(#goldGlow)"/>
+
+  <!-- Đài Bát Quái Kim Cương nâng đỡ -->
+  <g fill="#78350f" stroke="#fde047" stroke-width="2">
+    <polygon points="200,430 400,430 450,470 150,470" fill="#92400e"/>
+    <polygon points="230,400 370,400 400,430 200,430" fill="#b45309"/>
+    <!-- Ký tự Bát Quái Càn Khôn -->
+    <rect x="270" y="445" width="60" height="6" fill="#fef08a"/>
+    <rect x="270" y="455" width="26" height="6" fill="#fef08a"/>
+    <rect x="304" y="455" width="26" height="6" fill="#fef08a"/>
+  </g>
+
+  <!-- Viên Kim Đan Tụ Nguyên Thần Thể -->
+  <circle cx="300" cy="270" r="90" fill="url(#goldPill)" filter="url(#goldGlow)"/>
+
+  <!-- Vệt kim long cuộn tròn quanh đan -->
+  <path d="M240,260 Q300,210 360,260 T300,340 T240,260" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="14 6" opacity="0.9"/>
+
+  <ellipse cx="265" cy="230" rx="20" ry="12" fill="#ffffff" opacity="0.95" transform="rotate(-35 265 230)"/>
+  <circle cx="340" cy="310" r="6" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Vành đai thái dương tỏa rạng -->
+  <circle cx="300" cy="270" r="120" fill="none" stroke="#fde047" stroke-width="3" stroke-dasharray="4 8" opacity="0.8"/>
+
+  <rect x="160" y="495" width="280" height="50" rx="8" fill="#1e0a02" stroke="#facc15" stroke-width="2"/>
+  <text x="300" y="527" text-anchor="middle" fill="#fef08a" font-family="'Times New Roman', serif" font-size="18" font-weight="bold" letter-spacing="2">KIM ĐAN TỤ NGUYÊN ĐAN</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bronzeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="#1e1510" stroke="url(#bronzeBorder)" stroke-width="6"/>
+  <circle cx="100" cy="100" r="82" fill="#2d1e15"/>
+  <text x="100" y="115" text-anchor="middle" font-size="58">🐗</text>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="#d97706" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+</svg>

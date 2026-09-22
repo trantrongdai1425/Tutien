@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="skyGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="40%" stop-color="#18181b"/>
+      <stop offset="80%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="640" cy="180" r="30%">
+      <stop offset="0%" stop-color="#99f6e4" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0d9488" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="spiderLilyGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#skyGrad5)"/>
+  <rect width="1280" height="720" fill="url(#moonGlow)"/>
+
+  <!-- Trăng khuyết u uất chiếu rọi dòng Vong Xuyên -->
+  <path d="M640,110 A70,70 0 0,0 710,180 A55,55 0 0,1 640,110 Z" fill="#ccfbf1" filter="url(#spiderLilyGlow)"/>
+
+  <!-- Cầu Nại Hà mờ ảo xa xăm -->
+  <path d="M460,420 Q640,360 820,420 L840,450 Q640,390 440,450 Z" fill="#3f3f46"/>
+  <rect x="520" y="420" width="12" height="60" fill="#27272a"/>
+  <rect x="748" y="420" width="12" height="60" fill="#27272a"/>
+
+  <!-- Dòng sông Vong Xuyên xanh thẫm u linh -->
+  <path d="M500,440 Q640,480 600,720 L680,720 Q720,480 780,440 Z" fill="#0f766e" opacity="0.75" filter="url(#spiderLilyGlow)"/>
+  <path d="M550,450 Q640,500 620,720 L660,720 Q680,500 730,450 Z" fill="#2dd4bf" opacity="0.6"/>
+
+  <!-- Hai bờ sông bạt ngàn hoa Bỉ Ngạn đỏ thắm -->
+  <path d="M0,480 Q320,440 540,510 L580,720 L0,720 Z" fill="#18181b"/>
+  <path d="M1280,480 Q960,440 740,510 L700,720 L1280,720 Z" fill="#18181b"/>
+
+  <!-- Hoa Bỉ Ngạn phát quang rực lửa hai bên bờ -->
+  <g fill="#ef4444" stroke="#f87171" stroke-width="1.2" filter="url(#spiderLilyGlow)">
+    <circle cx="140" cy="560" r="14"/>
+    <circle cx="210" cy="620" r="16"/>
+    <circle cx="280" cy="550" r="12"/>
+    <circle cx="340" cy="630" r="18"/>
+    <circle cx="420" cy="580" r="15"/>
+    <circle cx="480" cy="660" r="13"/>
+    
+    <circle cx="1140" cy="560" r="14"/>
+    <circle cx="1070" cy="620" r="16"/>
+    <circle cx="1000" cy="550" r="12"/>
+    <circle cx="940" cy="630" r="18"/>
+    <circle cx="860" cy="580" r="15"/>
+    <circle cx="800" cy="660" r="13"/>
+  </g>
+
+  <!-- Tiêu đề chương hồi Thư Pháp -->
+  <g font-family="'Times New Roman', serif">
+    <rect x="40" y="40" width="460" height="72" rx="6" fill="#09090b" opacity="0.8" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="60" y="72" fill="#fca5a5" font-size="14" font-weight="bold" letter-spacing="3">HỒI 5: LUÂN HỒI ĐẠI KIẾP</text>
+    <text x="60" y="98" fill="#ffffff" font-size="20" font-weight="bold" letter-spacing="1">HOÀNG TUYỀN VONG XUYÊN BỈ NGẠN</text>
+  </g>
+</svg>

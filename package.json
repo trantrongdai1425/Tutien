@@ -7,12 +7,21 @@
     "start": "node server/server.js",
     "dev": "node --watch server/server.js"
   },
-  "keywords": ["tutien", "game", "xianxia", "multiplayer", "socket.io"],
+  "keywords": [
+    "tutien",
+    "game",
+    "xianxia",
+    "multiplayer",
+    "socket.io"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
   }
 }

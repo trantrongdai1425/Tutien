@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="skyGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="35%" stop-color="#0369a1"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="aurora" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="swordGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#skyGrad2)"/>
+  <rect width="1280" height="720" fill="url(#aurora)"/>
+
+  <!-- Vầng Thái Cực Tiên Sơn -->
+  <circle cx="640" cy="300" r="220" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" opacity="0.5" filter="url(#swordGlow)"/>
+  <circle cx="640" cy="300" r="160" fill="none" stroke="#bae6fd" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Đỉnh núi tuyết Côn Lôn hiểm trở -->
+  <polygon points="640,280 480,680 800,680" fill="#f8fafc"/>
+  <polygon points="640,280 560,680 800,680" fill="#cbd5e1"/>
+  
+  <polygon points="320,380 180,720 490,720" fill="#e2e8f0"/>
+  <polygon points="320,380 260,720 490,720" fill="#94a3b8"/>
+
+  <polygon points="960,350 780,720 1150,720" fill="#e2e8f0"/>
+  <polygon points="960,350 880,720 1150,720" fill="#94a3b8"/>
+
+  <!-- Mây cuộn ngàn trượng -->
+  <ellipse cx="640" cy="540" rx="680" ry="120" fill="#0f172a" opacity="0.85"/>
+  <ellipse cx="640" cy="620" rx="720" ry="140" fill="#020617"/>
+
+  <!-- Hàng ngàn phi kiếm vây quanh vòng kiếm trận -->
+  <g stroke="#38bdf8" stroke-width="2.5" fill="#e0f2fe" filter="url(#swordGlow)">
+    <path d="M640,80 L646,140 L640,150 L634,140 Z"/>
+    <path d="M640,520 L646,460 L640,450 L634,460 Z"/>
+    <path d="M420,300 L480,306 L490,300 L480,294 Z"/>
+    <path d="M860,300 L800,306 L790,300 L800,294 Z"/>
+    <path d="M485,145 L530,185 L537,180 L527,173 Z"/>
+    <path d="M795,145 L750,185 L743,180 L753,173 Z"/>
+    <path d="M485,455 L530,415 L537,420 L527,427 Z"/>
+    <path d="M795,455 L750,415 L743,420 L753,427 Z"/>
+  </g>
+
+  <!-- Tiêu đề chương hồi Thư Pháp -->
+  <g font-family="'Times New Roman', serif">
+    <rect x="40" y="40" width="460" height="72" rx="6" fill="#020617" opacity="0.7" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="60" y="72" fill="#7dd3fc" font-size="14" font-weight="bold" letter-spacing="3">HỒI 2: ĐẠI HỘI BÁI SƯ LỤC PHÁI</text>
+    <text x="60" y="98" fill="#ffffff" font-size="20" font-weight="bold" letter-spacing="1">CÔN LÔN VẠN KIẾM QUY TÔNG</text>
+  </g>
+</svg>

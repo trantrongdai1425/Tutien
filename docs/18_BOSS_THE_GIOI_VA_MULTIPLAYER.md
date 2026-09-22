@@ -1,4 +1,7 @@
-# [05] SĂN BOSS THẾ GIỚI & TƯƠNG TÁC MULTIPLAYER
+# [18] SĂN BOSS THẾ GIỚI & TƯƠNG TÁC MULTIPLAYER
+
+
+> ⬅️ **[Bài Trước: Doc 17 - Bí Cảnh & Tổ Đội Realtime (1 - 5 Người)](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/17_BI_CANH_VA_TO_DOI_REALTIME.md)** | 📖 **[Mục Lục Toàn Cảnh](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/README.md)** | ➡️ **[Bài Kế: Doc 19 - Đại Biên Niên Sử 36 Tiểu Cảnh Giới & Hóa Phàm](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/19_DAI_BIEN_NIEN_SU_36_CANH_GIOI.md)**
 
 Module này định nghĩa các tính năng nhiều người chơi cùng lúc (Massive Multiplayer Co-op), tạo không khí sôi động cho nhóm bạn bè cùng cày cuốc.
 
@@ -47,3 +50,8 @@ stateDiagram-v2
   - Khi ai đó đột phá đại cảnh giới: *"📢 Chúc mừng đạo hữu **[Hàn Lập]** độ kiếp thành công, bước vào **[Nguyên Anh Kỳ]**!"*
   - Khi ai đó tẩy tủy ra thể chất huyền thoại: *"🌟 Thiên địa dị tượng! Đạo hữu **[Lệ Phi Vũ]** tẩy tủy thức tỉnh **[Hoang Cổ Thánh Thể]**!"*
   - Khi Boss xuất hiện: *"⚔️ Cảnh báo: Yêu Ma Thái Cổ đã thức tỉnh tại Vạn Ma Uyên!"*
+
+
+---
+
+> ⬅️ **[Bài Trước: Doc 17 - Bí Cảnh & Tổ Đội Realtime (1 - 5 Người)](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/17_BI_CANH_VA_TO_DOI_REALTIME.md)** | 📖 **[Mục Lục Toàn Cảnh](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/README.md)** | ➡️ **[Bài Kế: Doc 19 - Đại Biên Niên Sử 36 Tiểu Cảnh Giới & Hóa Phàm](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/19_DAI_BIEN_NIEN_SU_36_CANH_GIOI.md)**

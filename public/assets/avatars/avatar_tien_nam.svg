@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgTien" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#38bdf8"/>
+      <stop offset="85%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </radialGradient>
+    <filter id="divineGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="256" fill="url(#bgTien)"/>
+  <circle cx="256" cy="256" r="248" fill="none" stroke="#fef08a" stroke-width="4" filter="url(#divineGlow)"/>
+  <circle cx="256" cy="200" r="140" fill="none" stroke="#fde047" stroke-width="3" stroke-dasharray="8 6" opacity="0.8" filter="url(#divineGlow)"/>
+  
+  <!-- Nhân vật Tiên Tôn áo trắng tóc mây viền vàng -->
+  <path d="M120,512 C120,380 180,340 256,340 C332,340 392,380 392,512 Z" fill="#ffffff"/>
+  <path d="M170,512 L256,380 L342,512 Z" fill="#fef08a" opacity="0.6"/>
+  <!-- Cổ áo & Ngọc bội -->
+  <polygon points="256,340 220,430 256,470 292,430" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="256" cy="420" r="14" fill="#38bdf8" stroke="#facc15" stroke-width="3" filter="url(#divineGlow)"/>
+  
+  <!-- Khuôn mặt tuấn lãng & Tiên Cốt -->
+  <ellipse cx="256" cy="220" rx="60" ry="74" fill="#fef3c7"/>
+  <!-- Tóc tiên đen óng mượt xõa dài -->
+  <path d="M185,220 C185,130 210,110 256,110 C302,110 327,130 327,220 C327,270 335,350 345,390 C310,360 300,280 300,250 C280,270 232,270 212,250 C212,280 202,360 167,390 C177,350 185,270 185,220 Z" fill="#0f172a"/>
+  <!-- Trâm cài đầu ngọc bích -->
+  <rect x="236" y="90" width="40" height="12" rx="4" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
+  <!-- Tiên Ấn Hoàng Kim giữa trán -->
+  <polygon points="256,180 262,192 256,204 250,192" fill="#f59e0b" filter="url(#divineGlow)"/>
+  <!-- Kiếm khí tiên gia lơ lửng -->
+  <path d="M256,20 L262,80 L256,90 L250,80 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="2" filter="url(#divineGlow)"/>
+</svg>
