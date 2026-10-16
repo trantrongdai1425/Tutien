@@ -37,6 +37,10 @@ Toàn bộ quy trình và đặc tả kỹ thuật chi tiết của game đượ
 25. **[24_LOI_DAI_DAU_PHAP_PVP_VA_BANG_PHAI.md](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/24_LOI_DAI_DAU_PHAP_PVP_VA_BANG_PHAI.md)**: **[Doc 24]** Luận Đạo Lôi Đài: Đấu Pháp Đỉnh Cao & Tiên Minh Bang Phái — Đấu pháp PvP 1v1 turn-based realtime, cược Linh Thạch luận đạo, Thiên Kiêu Bảng ELO & thành lập Tiên Minh / Bang Phái người chơi tự quản.
 26. **[25_PHUONG_THI_DAU_GIA_VA_GIAO_DICH_P2P.md](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/25_PHUONG_THI_DAU_GIA_VA_GIAO_DICH_P2P.md)**: **[Doc 25]** Vạn Bảo Phường Thị: Giao Dịch Tự Do, Đấu Giá Hội & Hòm Thư — Nền kinh tế mở: Phường Thị ký gửi 48h, Đấu Giá Hội Vạn Bảo Các tối Chủ Nhật, Giao dịch P2P trực tiếp 1v1 an toàn & Hệ thống Tiên Tín hòm thư.
 27. **[26_DAO_LU_SONG_TU_HO_PHAP_DO_KIEP_VA_BOUNTY.md](file:///c:/Users/newre/OneDrive/Máy%20tính/code%20tutien/docs/26_DAO_LU_SONG_TU_HO_PHAP_DO_KIEP_VA_BOUNTY.md)**: **[Doc 26]** Tiên Duyên Đạo Lữ: Song Tu, Hộ Pháp Độ Kiếp & Huyền Thưởng — Kết duyên Đạo Lữ (bạn bè/NPC), nghi thức Song Tu hàng ngày nhận Đốn Ngộ, cơ chế đồng đội nhảy vào Hộ Pháp san sẻ lôi kiếp, Huyền Thưởng Bảng 5 nhiệm vụ & Danh Hiệu bản mệnh.
+28. **[27_DISCORD_BOT_HOACH_DINH_VA_TRIEN_KHAI.md](file:///d:/bai%20tap%20ki%204/code%20tutien/docs/27_DISCORD_BOT_HOACH_DINH_VA_TRIEN_KHAI.md)**: **[Doc 27]** Bản Mệnh Thần Thức: Hoạch Định & Triển Khai Phiên Bản Discord Bot AI — Kiến trúc Cross-play đồng bộ dữ liệu với Web qua Shared Database, 11 Slash Commands, Rich Embeds, AI Sư Tôn trong Thread & Kỳ Ngộ Động.
+29. **[28_DISCORD_ACTIVITIES_GACHA_THIEN_MENH_VA_WEB_HOSTING.md](file:///d:/bai%20tap%20ki%204/code%20tutien/docs/28_DISCORD_ACTIVITIES_GACHA_THIEN_MENH_VA_WEB_HOSTING.md)**: **[Doc 28]** Discord Activities: Nhúng Web Game Tiên Hiệp, Gacha Thiên Phú & Quy Chuẩn Web Hosting — Biến game thành Discord Activity chạy trực tiếp qua @discord/embedded-app-sdk, Gacha khởi nguyên 20 lần chọn 1, Tẩy tủy lũy tiến chống spam, và quy trình Hosting HTTPS/WSS (Cloudflare Tunnel & Render).
+
+
 
 ---
 

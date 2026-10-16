@@ -1,0 +1,25 @@
+{
+  "name": "tu-chan-gioi-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot Tu Tiên tích hợp AI, đồng bộ dữ liệu với Web Game Tu Chân Giới",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "deploy": "node deploy-commands.js",
+    "dev": "node --watch bot.js"
+  },
+  "keywords": [
+    "tutien",
+    "discord-bot",
+    "xianxia",
+    "gemini-ai",
+    "rpg"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}

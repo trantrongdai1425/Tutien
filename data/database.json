@@ -1,902 +1,110 @@
 {
   "characters": {
-    "hanlap": {
-      "name": "HanLap",
+    "tày": {
+      "name": "Tày",
       "password": "123456",
-      "element": "Thổ",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 4030,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": "Kim Cương Linh Thể",
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "inventory": {
-        "thao_duoc_linh_chi": 26,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 5,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 5,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 5,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 5,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 5,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 5,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 5,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 5,
-            "fert": 0,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 3,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 4,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 2,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789705610401,
-      "lastActiveAt": 1789705610401,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443,
-      "spiritReservoir": {
-        "storedExp": 5127.639999999463,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
       "race": "Nhan",
+      "element": "Hỏa",
       "spiritualRoot": "tap_can",
-      "aptitude": "Trung Phẩm",
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "lastToxinPurge": 1789793125136
-    },
-    "tèo": {
-      "name": "tèo",
-      "password": "123456",
-      "element": "Kim",
-      "realmId": 9,
-      "exp": 3000,
-      "currentHp": 1,
-      "stamina": 180,
-      "maxStamina": 180,
-      "spiritStones": 3490,
-      "physique": "Băng Phách Vương Thể",
-      "physiquePending": "Huyền Thủy Linh Thể",
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 1789789042042,
-      "inventory": {
-        "thao_duoc_linh_chi": 203,
-        "thao_duoc_hoang_tinh": 60,
-        "dan_the_luc": 0,
-        "dan_hoi_mau": 2,
-        "yeu_dan_1": 16,
-        "cong_phap_bat_hoai": 0,
-        "thao_duoc_quy_hiem": 40,
-        "dan_tu_khi": 0,
-        "nuoc_linh_khi": 10
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 3,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 5,
-            "fert": 6,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789705906472,
-      "lastActiveAt": 1789705906472,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443,
-      "spiritReservoir": {
-        "storedExp": 19769.180000000517,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [
-        "cong_phap_bat_hoai"
-      ],
-      "absorbedBloodlines": [],
-      "race": "Nhan",
-      "spiritualRoot": "chan_can",
-      "aptitude": "Hạ Phẩm",
-      "foundation": {
-        "purity": 100,
-        "stability": 30,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "lastToxinPurge": 1789793125136
-    },
-    "vương lệnh": {
-      "name": "Vương Lệnh",
-      "password": "123456",
-      "element": "Kim",
-      "realmId": 3,
-      "exp": 350,
-      "currentHp": 720,
-      "stamina": 120,
-      "maxStamina": 120,
-      "spiritStones": 4000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": "Liệt Hỏa Linh Thể",
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "inventory": {
-        "thao_duoc_linh_chi": 35,
-        "thao_duoc_hoang_tinh": 45,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": true
-          }
-        ]
-      },
-      "createdAt": 1789733329712,
-      "lastActiveAt": 1789733329712,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443,
-      "spiritReservoir": {
-        "storedExp": 9455.200000000286,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "race": "Nhan",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Hạ Phẩm",
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "lastToxinPurge": 1789793125136
-    },
-    "fpazo": {
-      "name": "fpazo",
-      "password": "123456",
-      "element": "Thổ",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
+      "aptitude": "Thượng Phẩm",
+      "realmId": 2,
+      "exp": 45.90000000000001,
+      "currentHp": 714,
+      "stamina": 96,
+      "maxStamina": 110,
       "spiritStones": 5000,
       "physique": "Phàm Thai Nhục Thân",
       "physiquePending": null,
       "hasCuLinhTran": false,
       "wellCooldownUntil": 0,
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 3,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 1,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": true
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789733903089,
-      "lastActiveAt": 1789733903089,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443,
-      "spiritReservoir": {
-        "storedExp": 5127.639999999463,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "race": "Nhan",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Trung Phẩm",
       "foundation": {
         "purity": 100,
         "stability": 100,
         "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
+        "grade": "Phàm Phẩm Trúc Cơ",
+        "form": null
       },
-      "lastToxinPurge": 1789793125136
-    },
-    "tester": {
-      "name": "Tester",
-      "password": "123456",
-      "element": "Mộc",
-      "realmId": 2,
-      "exp": 200,
-      "currentHp": 600,
-      "stamina": 110,
-      "maxStamina": 110,
-      "spiritStones": 5040,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
+      "latentTrait": {
+        "id": "cuu_am_tuyet_mach",
+        "awakened": false
+      },
+      "reincarnationCount": 0,
       "spiritReservoir": {
-        "storedExp": 7666.4800000009245,
+        "storedExp": 228.79999999999905,
         "maxCapacity": 50000
       },
       "learnedSkills": [],
       "absorbedBloodlines": [],
+      "equippedSkills": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equippedArtifacts": {
+        "weapon": null,
+        "armor": null,
+        "boots": null,
+        "amulet": null,
+        "ring": null,
+        "relic": null
+      },
+      "vault": {},
+      "sectOrigin": "TAN_TU",
+      "sectRank": "TAP_DICH",
+      "sectContribution": 0,
+      "lastStipendClaimedAt": 0,
+      "companionId": null,
+      "lastDualCultivateAt": 0,
+      "titles": [
+        "Tân Thủ Nhập Đạo"
+      ],
+      "activeTitle": "Tân Thủ Nhập Đạo",
+      "npcAffinities": {},
+      "mailbox": [
+        {
+          "id": "mail_welcome",
+          "senderName": "Thiên Đạo Ban Phúc",
+          "title": "Khai Sơn Lập Đạo Quà Tặng",
+          "content": "Chào mừng đạo hữu bước chân vào Tu Chân Giới! Kèm theo 1,000 Linh Thạch và 5 Đan Thể Lực hỗ trợ khởi đầu.",
+          "attachedItems": [
+            {
+              "itemId": "dan_the_luc",
+              "quantity": 5
+            }
+          ],
+          "attachedStones": 1000,
+          "isRead": false,
+          "isClaimed": false,
+          "sentAt": 1790210841175
+        }
+      ],
+      "dailyBounties": [
+        {
+          "id": "bounty_1",
+          "type": "MONSTER",
+          "title": "Trảm Yêu Trừ Ma",
+          "progress": 0,
+          "target": 5,
+          "rewardExp": 1000,
+          "rewardStones": 300,
+          "isClaimed": false
+        },
+        {
+          "id": "bounty_2",
+          "type": "FARM",
+          "title": "Thái Dược Dưỡng Sinh",
+          "progress": 0,
+          "target": 8,
+          "rewardExp": 800,
+          "rewardStones": 200,
+          "isClaimed": false
+        }
+      ],
       "inventory": {
-        "thao_duoc_linh_chi": 27,
+        "thao_duoc_linh_chi": 25,
         "thao_duoc_hoang_tinh": 20,
         "dan_the_luc": 5,
         "dan_hoi_mau": 5,
@@ -908,57 +116,57 @@
           {
             "id": 0,
             "stage": 4,
-            "water": 1,
-            "fert": 0,
+            "water": 0,
+            "fert": 4,
             "hasBug": false
           },
           {
             "id": 1,
             "stage": 4,
-            "water": 4,
-            "fert": 0,
+            "water": 3,
+            "fert": 3,
             "hasBug": false
           },
           {
             "id": 2,
             "stage": 4,
-            "water": 2,
-            "fert": 2,
+            "water": 1,
+            "fert": 3,
             "hasBug": true
           },
           {
             "id": 3,
             "stage": 4,
-            "water": 3,
-            "fert": 4,
+            "water": 0,
+            "fert": 5,
             "hasBug": false
           },
           {
             "id": 4,
             "stage": 4,
-            "water": 4,
-            "fert": 4,
+            "water": 0,
+            "fert": 1,
             "hasBug": false
           },
           {
             "id": 5,
             "stage": 4,
-            "water": 4,
+            "water": 2,
             "fert": 5,
             "hasBug": false
           },
           {
             "id": 6,
             "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": true
+            "water": 4,
+            "fert": 3,
+            "hasBug": false
           },
           {
             "id": 7,
             "stage": 4,
             "water": 0,
-            "fert": 0,
+            "fert": 5,
             "hasBug": false
           }
         ],
@@ -966,470 +174,7 @@
           {
             "id": 0,
             "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
             "water": 4,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 3,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789738537219,
-      "lastActiveAt": 1789738537219,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443,
-      "currentWildMonster": {
-        "name": "[Tinh Anh] Giao Long",
-        "prefix": "Tinh Anh",
-        "prefixColor": "#38bdf8",
-        "realmName": "Luyện Khí Tầng 1",
-        "targetRealmId": 1,
-        "element": "Thổ",
-        "tier": 1,
-        "hp": 513,
-        "maxHp": 513,
-        "atk": 56,
-        "def": 25,
-        "exp": 17,
-        "stones": 31,
-        "isWild": true
-      },
-      "race": "Nhan",
-      "spiritualRoot": "chan_can",
-      "aptitude": "Hạ Phẩm",
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "lastToxinPurge": 1789793125136
-    },
-    "testdao_nhan_2350": {
-      "name": "TestDao_Nhan_2350",
-      "password": "123456",
-      "race": "Nhan",
-      "element": "Kim",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Hạ Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "spiritReservoir": {
-        "storedExp": 3466.760000000364,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": true
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": true
-          }
-        ]
-      },
-      "createdAt": 1789742502381,
-      "lastActiveAt": 1789742502381,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "testdao_tien_2387": {
-      "name": "TestDao_Tien_2387",
-      "password": "123456",
-      "race": "Tien",
-      "element": "Hỏa",
-      "spiritualRoot": "thien_can_thuy",
-      "aptitude": "Hạ Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "spiritReservoir": {
-        "storedExp": 3785.280000000131,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 1,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": true
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 1,
             "fert": 5,
             "hasBug": false
           },
@@ -1443,700 +188,43 @@
           {
             "id": 2,
             "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
             "water": 1,
             "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": true
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
             "hasBug": false
           },
           {
             "id": 3,
             "stage": 4,
             "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789742502388,
-      "lastActiveAt": 1789742502388,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "testdao_ma_2391": {
-      "name": "TestDao_Ma_2391",
-      "password": "123456",
-      "race": "Ma",
-      "element": "Hỏa",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Trung Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "spiritReservoir": {
-        "storedExp": 2828.8800000000256,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
             "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
             "hasBug": true
           },
           {
             "id": 4,
             "stage": 4,
-            "water": 3,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
             "water": 2,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789742502391,
-      "lastActiveAt": 1789742502391,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "testdao_yeu_2394": {
-      "name": "TestDao_Yeu_2394",
-      "password": "123456",
-      "race": "Yeu",
-      "element": "Hỏa",
-      "spiritualRoot": "chan_can",
-      "aptitude": "Trung Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "spiritReservoir": {
-        "storedExp": 2828.8800000000256,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 2,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 4,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 4,
             "fert": 2,
             "hasBug": false
           },
           {
             "id": 5,
             "stage": 4,
-            "water": 3,
-            "fert": 4,
+            "water": 4,
+            "fert": 3,
             "hasBug": false
           },
           {
             "id": 6,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 7,
             "stage": 4,
             "water": 2,
-            "fert": 0,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789742502395,
-      "lastActiveAt": 1789742502395,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "testdao_minh_2397": {
-      "name": "TestDao_Minh_2397",
-      "password": "123456",
-      "race": "Minh",
-      "element": "Mộc",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Địa Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "spiritReservoir": {
-        "storedExp": 3785.280000000131,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 0,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
             "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
             "hasBug": true
           },
           {
             "id": 7,
             "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": false
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
+            "water": 3,
             "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 1,
             "hasBug": false
           }
         ],
@@ -2145,745 +233,78 @@
             "id": 0,
             "stage": 4,
             "water": 3,
-            "fert": 2,
+            "fert": 5,
             "hasBug": true
           },
           {
             "id": 1,
+            "stage": 4,
+            "water": 0,
+            "fert": 0,
+            "hasBug": false
+          },
+          {
+            "id": 2,
+            "stage": 4,
+            "water": 0,
+            "fert": 5,
+            "hasBug": false
+          },
+          {
+            "id": 3,
+            "stage": 1,
+            "water": 1,
+            "fert": 1,
+            "hasBug": false
+          },
+          {
+            "id": 4,
             "stage": 4,
             "water": 1,
             "fert": 5,
             "hasBug": false
           },
           {
-            "id": 2,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
             "id": 5,
             "stage": 4,
-            "water": 3,
-            "fert": 2,
+            "water": 0,
+            "fert": 5,
             "hasBug": false
           },
           {
             "id": 6,
             "stage": 4,
-            "water": 0,
-            "fert": 2,
+            "water": 1,
+            "fert": 0,
             "hasBug": true
           },
           {
             "id": 7,
             "stage": 4,
-            "water": 1,
-            "fert": 1,
-            "hasBug": false
+            "water": 4,
+            "fert": 2,
+            "hasBug": true
           }
         ]
       },
-      "createdAt": 1789742502398,
-      "lastActiveAt": 1789742502398,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "testdao_cleanse_2401": {
-      "name": "TestDao_Cleanse_2401",
-      "password": "123456",
-      "race": "Nhan",
-      "element": "Thủy",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Hạ Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ"
-      },
-      "spiritReservoir": {
-        "storedExp": 3466.760000000364,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": true
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 0,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 0,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 0,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 3,
-            "fert": 5,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 3,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 0,
-            "fert": 4,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789742502402,
-      "lastActiveAt": 1789742502402,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "hanlap2d": {
-      "name": "HanLap2D",
-      "password": "123456",
-      "race": "Nhan",
-      "element": "Mộc",
-      "spiritualRoot": "chan_can",
-      "aptitude": "Hạ Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 5000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": null,
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 0,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ",
-        "form": null
-      },
-      "latentTrait": null,
-      "reincarnationCount": 0,
-      "spiritReservoir": {
-        "storedExp": 3221.2400000003336,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 5,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 2,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 2,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": false
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 1,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 4,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789785563318,
-      "lastActiveAt": 1789785563318,
-      "lastToxinPurge": 1789793125136,
-      "lastStaminaRegen": 1789793125136,
-      "lastGardenTick": 1789793156443
-    },
-    "đạo sĩ test": {
-      "name": "Đạo Sĩ Test",
-      "password": "123456",
-      "race": "Nhan",
-      "element": "Thổ",
-      "spiritualRoot": "tap_can",
-      "aptitude": "Hạ Phẩm",
-      "realmId": 1,
-      "exp": 100,
-      "currentHp": 500,
-      "stamina": 100,
-      "maxStamina": 100,
-      "spiritStones": 4000,
-      "physique": "Phàm Thai Nhục Thân",
-      "physiquePending": "Thiết Cốt Phàm Thể",
-      "hasCuLinhTran": false,
-      "wellCooldownUntil": 1789791763025,
-      "foundation": {
-        "purity": 100,
-        "stability": 100,
-        "pillToxins": 0,
-        "grade": "Phàm Phẩm Trúc Cơ",
-        "form": null
-      },
-      "latentTrait": null,
-      "reincarnationCount": 0,
-      "spiritReservoir": {
-        "storedExp": 834.6800000000376,
-        "maxCapacity": 50000
-      },
-      "learnedSkills": [],
-      "absorbedBloodlines": [],
-      "inventory": {
-        "thao_duoc_linh_chi": 25,
-        "thao_duoc_hoang_tinh": 20,
-        "dan_the_luc": 4,
-        "dan_hoi_mau": 5,
-        "dan_ho_mach": 2,
-        "dan_tu_khi": 3,
-        "nuoc_linh_khi": 10
-      },
-      "gardens": {
-        "DAN": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 4,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 4,
-            "hasBug": true
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": true
-          }
-        ],
-        "HOA": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 3,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 0,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 4,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 4,
-            "fert": 3,
-            "hasBug": true
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 1,
-            "fert": 4,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 1,
-            "fert": 5,
-            "hasBug": true
-          }
-        ],
-        "HIEM": [
-          {
-            "id": 0,
-            "stage": 4,
-            "water": 2,
-            "fert": 5,
-            "hasBug": true
-          },
-          {
-            "id": 1,
-            "stage": 4,
-            "water": 2,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 2,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": false
-          },
-          {
-            "id": 3,
-            "stage": 4,
-            "water": 3,
-            "fert": 0,
-            "hasBug": true
-          },
-          {
-            "id": 4,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": false
-          },
-          {
-            "id": 5,
-            "stage": 4,
-            "water": 1,
-            "fert": 2,
-            "hasBug": true
-          },
-          {
-            "id": 6,
-            "stage": 4,
-            "water": 2,
-            "fert": 3,
-            "hasBug": false
-          },
-          {
-            "id": 7,
-            "stage": 4,
-            "water": 3,
-            "fert": 1,
-            "hasBug": false
-          }
-        ]
-      },
-      "createdAt": 1789791158010,
-      "lastActiveAt": 1789791158010,
-      "lastToxinPurge": 1789793153411,
-      "lastStaminaRegen": 1789793153411,
-      "lastGardenTick": 1789793153411
+      "createdAt": 1790210841175,
+      "lastActiveAt": 1790210841175,
+      "lastToxinPurge": 1790211446279,
+      "lastStaminaRegen": 1790211446279,
+      "lastGardenTick": 1790211476533
     }
   },
   "worldBoss": {
     "id": "boss_tram_lu",
     "name": "Trạm Lư Ma Tôn (Thái Cổ Hung Thú)",
-    "currentHp": 4953869,
+    "currentHp": 5000000,
     "maxHp": 5000000,
     "atk": 1500,
     "def": 800,
     "isAlive": true,
     "lastKilledAt": null,
     "respawnAt": null,
-    "dpsTable": {
-      "Vương Lệnh": 1887,
-      "tèo": 44244
-    }
+    "dpsTable": {}
   },
   "parties": {},
   "chatMessages": [
@@ -2892,7 +313,7 @@
       "sender": "Hệ Thống",
       "realm": "Thiên Đạo",
       "text": "Chào mừng các vị đạo hữu giá lâm Tu Chân Giới!",
-      "time": "11:26:01 AM"
+      "time": "00:00:00"
     }
   ]
 }
